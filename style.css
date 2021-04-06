@@ -1,7 +1,272 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
-}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	font-family: Cursive;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+	width: 99%;
+
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: rgb(180, 216, 207);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: #111;
+  }
+
+  .logo-image{
+    width: 46px;
+    height: 46px;
+	display: block;
+	border-image: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+  }
+
+  h3 {
+	float: right;
+	margin: 0;
+	padding: auto;
+	background-origin: padding-box;
+
+  }
+
+  body {
+	font-family: 'Cinzel Decorative', cursive;
+	background: url(files/blurry-blue.jpg);
+	background-size: cover;
+	color: white;
+  }
+  
+  h2 {
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 2px 2px 8px #81c9ce;
+  }
+  .embiggen {
+	font-size: 4em;
+	text-shadow: 0 0 40px #ffbab3;
+  }
+  article {
+	max-width: 600px;
+	overflow: hidden;
+	margin: 0 auto 50px;
+  }
+  
+  .subtitle {
+	margin: 0 0 2em 0;
+	text-shadow: 2px 2px 8px #81c9ce;
+	font-size: large;
+	font-weight: bold;
+  }
+  .fancy {
+	line-height: 0.5;
+	text-align: center;
+  }
+  .fancy span {
+	display: inline-block;
+	position: relative;  
+  }
+  .fancy span:before,
+  .fancy span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-bottom: 1.7px solid rgba(119, 255, 237, 0.753);
+	border-top: 1.7px solid rgba(219, 101, 101, 0.801);
+	top: 0;
+	width: 650px;
+  }
+  .fancy span:before {
+	right: 100%;
+	margin-right: 15px;
+  }
+  .fancy span:after {
+	left: 100%;
+	margin-left: 15px;
+  }
+  .amp {
+	margin: 0 0 0.25em 0;
+  }
+  .amp span {
+	font-size: 0.7em;
+  }
+  
+  .copy {
+	font: 1em Cursive;
+	text-align: justify;
+	margin: 10px 100px 20px 20px;
+
+  }
+  .copy p {
+	margin: 0 0 1em 0;
+  }
+
+  .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid white;
+	border-collapse: collapse;
+  }
+
+
+  .Picture {
+	border: 3.5px solid rgba(6, 15, 22, 0.61);
+	border-radius: 60px 60px 60px 60px;
+	-moz-border-radius: 60px 60px 60px 60px;
+	-webkit-border-radius: 60px 60px 60px 60px;
+	
+  }
+
+  input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	font-family: Cursive;
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #4CAF50;
+	font-family: Cursive;
+	color: white;
+	padding: 12px 40px;
+	border: none;
+	border-style: groove;
+	border-radius: 25px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	border-radius: 5px;
+	/*background-color: #14565f;*/
+	padding: 20px;
+	border-style: dotted;
+  }
+
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container1 {
+	position: relative;
+	padding-top: 50px;
+    width: 500px;
+    margin: 0 auto;
+	border-style: dotted;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: center;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	/*background-color: rgba(0, 0, 0, 0.8);*/
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	/*background-color: #222;*/
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
